@@ -132,40 +132,40 @@ namespace pizza_system_advanced
         protected global::System.Web.UI.WebControls.Image extraC;
 
         /// <summary>
-        /// CB_pine control.
+        /// checkbox_pineapple control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CB_pine;
+        protected global::System.Web.UI.WebControls.CheckBox checkbox_pineapple;
 
         /// <summary>
-        /// CB_pepp control.
+        /// checkbox_pepproni control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CB_pepp;
+        protected global::System.Web.UI.WebControls.CheckBox checkbox_pepproni;
 
         /// <summary>
-        /// CB_sard control.
+        /// checkbox_sardines control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CB_sard;
+        protected global::System.Web.UI.WebControls.CheckBox checkbox_sardines;
 
         /// <summary>
-        /// CB_cheese control.
+        /// checkbox_extra_cheese control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CB_cheese;
+        protected global::System.Web.UI.WebControls.CheckBox checkbox_extra_cheese;
 
         /// <summary>
         /// button_con1 control.
@@ -177,22 +177,22 @@ namespace pizza_system_advanced
         protected global::System.Web.UI.WebControls.Button button_con1;
 
         /// <summary>
-        /// button_pickUp control.
+        /// radiobutton_collection_pickup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton button_pickUp;
+        protected global::System.Web.UI.WebControls.RadioButton radiobutton_collection_pickup;
 
         /// <summary>
-        /// button_delivery control.
+        /// radiobutton_collection_delivery control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton button_delivery;
+        protected global::System.Web.UI.WebControls.RadioButton radiobutton_collection_delivery;
 
         /// <summary>
         /// button_con2 control.
@@ -312,13 +312,13 @@ namespace pizza_system_advanced
         protected global::System.Web.UI.WebControls.Label label_total;
 
         /// <summary>
-        /// order_chek control.
+        /// checkbox_order_confirm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox order_chek;
+        protected global::System.Web.UI.WebControls.CheckBox checkbox_order_confirm;
 
         /// <summary>
         /// button_order control.

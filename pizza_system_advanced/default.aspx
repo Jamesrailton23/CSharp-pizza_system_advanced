@@ -113,13 +113,16 @@
             <asp:Image ID="extraC" runat="server" Height="115px" ImageUrl="~/cheese.jpg" Width="115px" />
             <br />
             <br />
-&nbsp;&nbsp;<strong>&nbsp;&nbsp;<asp:CheckBox ID="CB_pine" runat="server" OnCheckedChanged="CB_pine_CheckedChanged" Text="Pineapple" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:CheckBox ID="CB_pepp" runat="server" OnCheckedChanged="CB_pepp_CheckedChanged" Text="Pepproni" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:CheckBox ID="CB_sard" runat="server" OnCheckedChanged="CB_sard_CheckedChanged" Text="Sardines" />
+&nbsp;&nbsp;<strong>&nbsp;&nbsp;<asp:CheckBox ID="checkbox_pineapple" runat="server" Text="Pineapple" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+            <asp:CheckBox ID="checkbox_pepproni" runat="server" Text="Pepproni" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:CheckBox ID="checkbox_sardines" runat="server" Text="Sardines" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:CheckBox ID="checkbox_extra_cheese" runat="server" Text="Extra Cheese" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:CheckBox ID="CB_cheese" runat="server" OnCheckedChanged="CB_cheese_CheckedChanged" Text="Extra Cheese" />
             </strong>
             <br />
 &nbsp;&nbsp;
@@ -133,11 +136,11 @@
             <br />
 &nbsp; Whould you like pickup or delivery?<br />
             <br />
-&nbsp;<strong><asp:RadioButton ID="button_pickUp" runat="server" Text="Pick Up" GroupName="pd" OnCheckedChanged="button_pickUp_CheckedChanged" />
-&nbsp; Or
-            <asp:RadioButton ID="button_delivery" runat="server" Text="Delivery" GroupName="pd" OnCheckedChanged="button_delivery_CheckedChanged" />
-            </strong>
-            <br />
+&nbsp;<strong>&nbsp;&nbsp;
+            <asp:RadioButton ID="radiobutton_collection_pickup" runat="server" GroupName="collection" Text="Pick Up" />
+&nbsp;Or
+            <asp:RadioButton ID="radiobutton_collection_delivery" runat="server" GroupName="collection" Text="Delivery" />
+&nbsp;(£7)</strong><br />
 &nbsp;
             <br />
 &nbsp;&nbsp;
@@ -182,7 +185,7 @@
             <br />
             <br />
             <br />
-&nbsp;<asp:CheckBox ID="order_chek" runat="server" OnCheckedChanged="order_chek_CheckedChanged" Text=" Tick to confirm order" style="font-weight: 700; text-decoration: underline" />
+&nbsp;<asp:CheckBox ID="checkbox_order_confirm" runat="server" Text="Confirm Your Order" />
             <br />
 &nbsp;<br />
             <br />

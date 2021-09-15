@@ -121,12 +121,12 @@ namespace pizza_system_advanced
         //-------------------------------------------------------------------------------
         protected void button_con1_Click(object sender, EventArgs e)
         {
-            decimal tp_total = 0.00m;
-            tp_total = (CB_pine.Checked) ? tp_total + 1.50m : tp_total;
-            tp_total = (CB_pepp.Checked) ? tp_total + 1.50m : tp_total;
-            tp_total = (CB_sard.Checked) ? tp_total + 1.50m : tp_total;
-            tp_total = (CB_cheese.Checked) ? tp_total + 1.50m : tp_total;
-            label_topping.Text = tp_total.ToString();
+            decimal topping_total = 0.00m;
+            topping_total = (checkbox_pineapple.Checked) ? topping_total + 1.50m : topping_total;
+            topping_total = (checkbox_pepproni.Checked) ? topping_total + 1.50m : topping_total;
+            topping_total = (checkbox_sardines.Checked) ? topping_total + 1.50m : topping_total;
+            topping_total = (checkbox_extra_cheese.Checked) ? topping_total + 1.50m : topping_total;
+            label_topping.Text = topping_total.ToString();
             currency_topping.Text = "£";
         }
 
@@ -134,10 +134,9 @@ namespace pizza_system_advanced
 
         protected void button_con2_Click(object sender, EventArgs e)
         {
-            decimal pickUp_or_delivery = 0.00m;
-            pickUp_or_delivery = (button_delivery.Checked) ? pickUp_or_delivery + 10.00m : pickUp_or_delivery;
-            pickUp_or_delivery = (button_pickUp.Checked) ? pickUp_or_delivery + 0.00m : pickUp_or_delivery;
-            label_pickup.Text =  pickUp_or_delivery.ToString();
+            decimal pickup_or_delivery = 0.00m;
+            pickup_or_delivery = (radiobutton_collection_delivery.Checked) ? pickup_or_delivery + 7.00m : pickup_or_delivery;
+            label_pickup.Text =  pickup_or_delivery.ToString();
             currency_dc.Text = "£";
 
             //-------------------------------------------------------------------------------------------
@@ -165,7 +164,7 @@ namespace pizza_system_advanced
         protected void button_order_Click(object sender, EventArgs e)
         {
 
-            if (order_chek.Checked)
+            if (checkbox_order_confirm.Checked)
             {
                 label_thankyou.Text = "Thank You For Your Order";
             }
@@ -177,45 +176,5 @@ namespace pizza_system_advanced
 
         }
 
-       
-
-
-
-
-
-        protected void CB_pine_CheckedChanged(object sender, EventArgs e)
-        {
-            // Ignore --------------------------------------------------
-        }
-
-        protected void CB_pepp_CheckedChanged(object sender, EventArgs e)
-        {
-            // Ignore --------------------------------------------------
-        }
-
-        protected void CB_sard_CheckedChanged(object sender, EventArgs e)
-        {
-            // Ignore --------------------------------------------------
-        }
-
-        protected void CB_cheese_CheckedChanged(object sender, EventArgs e)
-        {
-            // Ignore --------------------------------------------------
-        }
-
-        protected void button_pickUp_CheckedChanged(object sender, EventArgs e)
-        {
-            // Ignore --------------------------------------------------
-        }
-
-        protected void button_delivery_CheckedChanged(object sender, EventArgs e)
-        {
-            // Ignore --------------------------------------------------
-        }
-
-        protected void order_chek_CheckedChanged(object sender, EventArgs e)
-        {
-            // Ignore --------------------------------------------------
-        }
     }
 }
